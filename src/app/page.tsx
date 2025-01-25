@@ -21,7 +21,6 @@ export default function AppIntro() {
         <a
           href="https://apps.apple.com/us/app/%ED%95%B5%EA%B5%90-%EC%A0%84%EA%B5%AD-%EC%B4%88%EC%A4%91%EA%B3%A0-%EC%8B%9C%EA%B0%84%ED%91%9C-%EB%B0%8F-%EA%B8%89%EC%8B%9D-%EC%A0%95%EB%B3%B4%EB%A5%BC-%ED%95%9C%EB%88%88%EC%97%90/id6740911495"
           target="_blank"
-          rel="noopener noreferrer"
         >
           <Image
             src="/app-store-badge.png"
@@ -31,9 +30,8 @@ export default function AppIntro() {
           />
         </a>
         <a
-          href="https://play.google.com"
+          href="https://play.google.com/store/apps/details?id=app.kyulabs.hackkyo"
           target="_blank"
-          rel="noopener noreferrer"
         >
           <Image
             src="/google-play-badge.png"
