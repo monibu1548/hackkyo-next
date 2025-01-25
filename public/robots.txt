@@ -1,0 +1,3 @@
+# 핵교 사이트 robots.txt
+User-agent: *
+Allow: /
