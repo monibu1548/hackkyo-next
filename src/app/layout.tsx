@@ -65,6 +65,8 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <head>
+        <meta name="naver-site-verification" content="2eadb19cafaa7d7afbc2a4814dd57d8a936537df" />
+
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body
