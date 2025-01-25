@@ -1,101 +1,82 @@
 import Image from "next/image";
 
-export default function Home() {
+export default function AppIntro() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <div className="flex flex-col items-center justify-center p-8 min-h-screen bg-gray-100">
+      <div className="flex items-center mb-4">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          src="/1024x1024.png"
+          alt="App Icon"
+          width={100}
+          height={100}
+          className="mr-4 rounded-lg"
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div>
+          <h1 className="text-3xl font-bold">핵교 - 전국 초중교 시간표 및 급식 정보를 한눈에!</h1>
+          <h2 className="text-xl text-gray-600">핵교 댕겨오겠습니다</h2>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+      </div>
+
+      <div className="flex items-center gap-4 mb-20">
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://apps.apple.com/us/app/%ED%95%B5%EA%B5%90-%EC%A0%84%EA%B5%AD-%EC%B4%88%EC%A4%91%EA%B3%A0-%EC%8B%9C%EA%B0%84%ED%91%9C-%EB%B0%8F-%EA%B8%89%EC%8B%9D-%EC%A0%95%EB%B3%B4%EB%A5%BC-%ED%95%9C%EB%88%88%EC%97%90/id6740911495"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src="/app-store-badge.png"
+            alt="Download on the App Store"
+            width={120}
+            height={40}
           />
-          Learn
         </a>
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://play.google.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+            src="/google-play-badge.png"
+            alt="Get it on Google Play"
+            width={145}
+            height={50}
           />
-          Examples
         </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+
+      {/* 앱 설명 추가 */}
+      <div className="text-left w-full max-w-2xl mb-8">
+        <p className="text-gray-700 mb-2">
+          이제 수기로 입력할 필요 없이, NEIS 학사정보 시스템과 연동하여 최신 정보를 자동으로 받아볼 수 있어요.
+        </p>
+        <p className="text-gray-700 mb-6">
+          학교 시간표가 변경되어도 걱정하지 마세요! 핵교가 실시간으로 업데이트해 드립니다.
+        </p>
+        <h4 className="text-xl font-bold text-gray-900 mb-2">주요 기능:</h4>
+        <ul className="list-disc pl-5 text-gray-700 space-y-2">
+          <li>실시간 시간표 확인 – NEIS 시스템과 연동하여 최신 정보를 자동 업데이트</li>
+          <li>급식 메뉴 제공 – 오늘의 급식, 주간 메뉴까지 한눈에</li>
+          <li>간편한 설정 – 학교 검색 후 학년·반만 선택하면 끝!</li>
+          <li>직관적인 UI – 학생, 학부모 누구나 쉽게 사용할 수 있는 간편한 디자인</li>
+        </ul>
+        <p className="mt-4 text-gray-800 font-semibold">
+          지금 핵교를 다운로드하고 쉽고 빠르게 학교 생활을 관리하세요!
+        </p>
+      </div>
+
+      {/* 스크린샷 섹션 제목 */}
+      <div className="flex items-center w-full max-w-2xl">
+        <h3 className="text-2xl font-semibold self-start w-full mb-4 mt-16">
+          스크린샷
+        </h3>
+      </div>
+
+      <div className="flex gap-4 mb-6">
+        <Image src="/screenshot_1.png" alt="Screenshot 1" width={150} height={300} />
+        <Image src="/screenshot_2.png" alt="Screenshot 2" width={150} height={300} />
+        <Image src="/screenshot_3.png" alt="Screenshot 3" width={150} height={300} />
+        <Image src="/screenshot_4.png" alt="Screenshot 4" width={150} height={300} />
+      </div>
     </div>
   );
 }
