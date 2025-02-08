@@ -12,7 +12,7 @@ export default function AppIntro() {
           className="mr-4 rounded-lg"
         />
         <div>
-          <h1 className="text-3xl font-bold">핵교 - 전국 초중교 시간표 및 급식 정보를 한눈에!</h1>
+          <h1 className="text-3xl font-bold text-gray-900">핵교 - 전국 초중교 시간표 및 급식 정보를 한눈에!</h1>
           <h2 className="text-xl text-gray-600">핵교 댕겨오겠습니다</h2>
         </div>
       </div>
